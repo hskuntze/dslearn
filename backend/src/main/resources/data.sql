@@ -32,3 +32,18 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prer
 
 INSERT INTO tb_enrollment (enroll_Moment, refund_Moment, available, only_Update, user_id, offer_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-03-01T09:00:00Z', null, true, false, 1, 1);
 INSERT INTO tb_enrollment (enroll_Moment, refund_Moment, available, only_Update, user_id, offer_id) VALUES (TIMESTAMP WITH TIME ZONE '2020-03-01T09:00:00Z', null, true, false, 2, 1);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 1, Cap. 1', 1, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (1, 'Lorem Ipsum', 'https://www.youtube.com/watch?v=-X9aL2rqKhM&list=PLuI6iKudxBm38pMANrnnkKrLB2b3lj7GP');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 2, Cap. 1', 2, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (2, 'Lorem Ipsum', 'https://www.youtube.com/watch?v=xLDViuYlqGM&list=PLuI6iKudxBm38pMANrnnkKrLB2b3lj7GP&index=2');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 3, Cap. 1', 3, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (3, 'Lorem Ipsum', 'https://www.youtube.com/watch?v=-X9aL2rqKhM&list=PLuI6iKudxBm38pMANrnnkKrLB2b3lj7GP&index=3');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Tarefa, Cap. 1', 4, 1);
+INSERT INTO tb_task (id, approval_Count, question_Count, description, due_Date, weight) VALUES (4, 3, 6, 'Entregar um modelo relacional de um projeto fictício.', TIMESTAMP WITH TIME ZONE '2020-04-01T03:00:00Z', 1.0);
+
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
