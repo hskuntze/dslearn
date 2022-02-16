@@ -18,9 +18,9 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp Spring Rea
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-03-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-03-01T03:00:00Z', 1);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-12-01T03:00:00Z', 1);
 
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-12-01T15:32:16Z', false, 'https://learn.devsuperior.com', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-01-03T09:11:59Z', false, 'https://learn.devsuperior.com', 2);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, 'https://learn.devsuperior.com', 3);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-12-01T15:32:16Z', false, '/offers/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-01-03T09:11:59Z', false, '/offers/1', 2);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, '/offers/1', 3);
 
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Aulas Spring React', 'Todas as aulas do bootcamp Spring React', 1, 'https://i.imgur.com/ghvPYPA.png', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Fórum', 'Poste e retire suas dúvidas aqui', 2, 'https://www.teclasap.com.br/wp-content/uploads/2012/10/forum.jpg', 2, 1);
