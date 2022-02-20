@@ -95,6 +95,14 @@ public class Enrollment {
 		this.onlyUpdate = onlyUpdate;
 	}
 
+	public Set<Lesson> getLessonsDone() {
+		return lessonsDone;
+	}
+
+	public List<Deliver> getDeliveries() {
+		return deliveries;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
