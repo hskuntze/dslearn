@@ -65,11 +65,11 @@ public class Notification implements Serializable{
 		this.moment = moment;
 	}
 
-	public Boolean getRead() {
+	public Boolean isRead() {
 		return read;
 	}
 
-	public void setRead(Boolean read) {
+	public void setRead(boolean read) {
 		this.read = read;
 	}
 
@@ -79,6 +79,14 @@ public class Notification implements Serializable{
 
 	public void setRoute(String route) {
 		this.route = route;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override

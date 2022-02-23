@@ -19,6 +19,9 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-12-01T03:00:00Z', 1);
 
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-12-01T15:32:16Z', false, '/offers/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('O que está achando do curso?', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, '/offers/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Você completou a primeira tarefa!', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, '/offers/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Veja o feedback do seu professor', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, '/offers/1', 1);
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-01-03T09:11:59Z', false, '/offers/1', 2);
 INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Seja bem-vindo(a) a plataforma!', TIMESTAMP WITH TIME ZONE '2020-05-18T17:44:33Z', false, '/offers/1', 3);
 
